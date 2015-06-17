@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Start : UIViewController
+@interface Start : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
+///////Actions/////////
+- (IBAction)btnAddNew:(id)sender;
+
+//////Table outlet//////////////
+@property (strong, nonatomic) IBOutlet UITableView *tblMain;
 
 @end
 

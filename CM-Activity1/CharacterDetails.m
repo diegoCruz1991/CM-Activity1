@@ -7,6 +7,7 @@
 //
 
 #import "CharacterDetails.h"
+#import "Declarations.h"
 
 @interface CharacterDetails ()
 
@@ -14,8 +15,12 @@
 
 @implementation CharacterDetails
 
+/**********************************************************************************************/
+#pragma mark - Init Methods
+/**********************************************************************************************/
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initController];
     // Do any additional setup after loading the view.
 }
 
@@ -24,14 +29,23 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)initController {
+    self.lblDescription.adjustsFontSizeToFitWidth = YES;
+    self.lblDescription.text   = maDesc[miCharacterIndex];
+    if ([UIImage imageNamed:maImgs[miCharacterIndex]] == nil) {
+        NSString *cachedFolderPath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0];
+        NSString *cachedImagePath = [cachedFolderPath stringByAppendingPathComponent:maImgs[miCharacterIndex]];
+        self.imgCharacter.image = [UIImage imageWithData:[NSData dataWithContentsOfFile:cachedImagePath]];
+    }else {
+        self.imgCharacter.image  = [UIImage imageNamed:maImgs[miCharacterIndex]];
+    }
 }
-*/
+
+/**********************************************************************************************/
+#pragma mark - Buttons methods
+/**********************************************************************************************/
+- (IBAction)btnBack:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

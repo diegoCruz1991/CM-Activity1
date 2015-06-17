@@ -18,6 +18,14 @@
 		085586C91B311560002246E4 /* CharacterDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 085586C81B311560002246E4 /* CharacterDetails.m */; };
 		085586CE1B311646002246E4 /* CustomizedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 085586CC1B311646002246E4 /* CustomizedCell.m */; };
 		085586CF1B311646002246E4 /* CustomizedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 085586CD1B311646002246E4 /* CustomizedCell.xib */; };
+		085586D21B312139002246E4 /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = 085586D11B312139002246E4 /* Declarations.m */; };
+		085586E71B312E73002246E4 /* arya.png in Resources */ = {isa = PBXBuildFile; fileRef = 085586E21B312E73002246E4 /* arya.png */; };
+		085586E81B312E73002246E4 /* daenerys.png in Resources */ = {isa = PBXBuildFile; fileRef = 085586E31B312E73002246E4 /* daenerys.png */; };
+		085586E91B312E73002246E4 /* jon.png in Resources */ = {isa = PBXBuildFile; fileRef = 085586E41B312E73002246E4 /* jon.png */; };
+		085586EA1B312E73002246E4 /* petyr.png in Resources */ = {isa = PBXBuildFile; fileRef = 085586E51B312E73002246E4 /* petyr.png */; };
+		085586EB1B312E73002246E4 /* tyron.png in Resources */ = {isa = PBXBuildFile; fileRef = 085586E61B312E73002246E4 /* tyron.png */; };
+		085586F01B313A1E002246E4 /* AddNew.m in Sources */ = {isa = PBXBuildFile; fileRef = 085586EF1B313A1E002246E4 /* AddNew.m */; };
+		085586F21B313D67002246E4 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 085586F11B313D67002246E4 /* default.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +58,16 @@
 		085586CB1B311646002246E4 /* CustomizedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedCell.h; sourceTree = "<group>"; };
 		085586CC1B311646002246E4 /* CustomizedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizedCell.m; sourceTree = "<group>"; };
 		085586CD1B311646002246E4 /* CustomizedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomizedCell.xib; sourceTree = "<group>"; };
+		085586D01B312139002246E4 /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
+		085586D11B312139002246E4 /* Declarations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
+		085586E21B312E73002246E4 /* arya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arya.png; sourceTree = "<group>"; };
+		085586E31B312E73002246E4 /* daenerys.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daenerys.png; sourceTree = "<group>"; };
+		085586E41B312E73002246E4 /* jon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jon.png; sourceTree = "<group>"; };
+		085586E51B312E73002246E4 /* petyr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = petyr.png; sourceTree = "<group>"; };
+		085586E61B312E73002246E4 /* tyron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tyron.png; sourceTree = "<group>"; };
+		085586EE1B313A1E002246E4 /* AddNew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNew.h; sourceTree = "<group>"; };
+		085586EF1B313A1E002246E4 /* AddNew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNew.m; sourceTree = "<group>"; };
+		085586F11B313D67002246E4 /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +109,7 @@
 		085586991B31117B002246E4 /* CM-Activity1 */ = {
 			isa = PBXGroup;
 			children = (
+				085586E11B312E73002246E4 /* Images */,
 				085586CA1B3115FD002246E4 /* Customized */,
 				085586C41B31138A002246E4 /* Main */,
 				085586C31B3111A5002246E4 /* Controllers */,
@@ -136,6 +155,8 @@
 				085586A41B31117B002246E4 /* Start.h */,
 				085586C71B311560002246E4 /* CharacterDetails.h */,
 				085586C81B311560002246E4 /* CharacterDetails.m */,
+				085586EE1B313A1E002246E4 /* AddNew.h */,
+				085586EF1B313A1E002246E4 /* AddNew.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -145,6 +166,8 @@
 			children = (
 				0855869F1B31117B002246E4 /* AppDelegate.m */,
 				0855869E1B31117B002246E4 /* AppDelegate.h */,
+				085586D01B312139002246E4 /* Declarations.h */,
+				085586D11B312139002246E4 /* Declarations.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -157,6 +180,19 @@
 				085586CD1B311646002246E4 /* CustomizedCell.xib */,
 			);
 			name = Customized;
+			sourceTree = "<group>";
+		};
+		085586E11B312E73002246E4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				085586F11B313D67002246E4 /* default.jpg */,
+				085586E21B312E73002246E4 /* arya.png */,
+				085586E31B312E73002246E4 /* daenerys.png */,
+				085586E41B312E73002246E4 /* jon.png */,
+				085586E51B312E73002246E4 /* petyr.png */,
+				085586E61B312E73002246E4 /* tyron.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,10 +275,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				085586EA1B312E73002246E4 /* petyr.png in Resources */,
 				085586A91B31117B002246E4 /* Main.storyboard in Resources */,
+				085586E71B312E73002246E4 /* arya.png in Resources */,
+				085586E81B312E73002246E4 /* daenerys.png in Resources */,
 				085586AE1B31117B002246E4 /* LaunchScreen.xib in Resources */,
+				085586E91B312E73002246E4 /* jon.png in Resources */,
 				085586CF1B311646002246E4 /* CustomizedCell.xib in Resources */,
 				085586AB1B31117B002246E4 /* Images.xcassets in Resources */,
+				085586EB1B312E73002246E4 /* tyron.png in Resources */,
+				085586F21B313D67002246E4 /* default.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,8 +305,10 @@
 				085586A01B31117B002246E4 /* AppDelegate.m in Sources */,
 				085586C91B311560002246E4 /* CharacterDetails.m in Sources */,
 				0855869D1B31117B002246E4 /* main.m in Sources */,
+				085586D21B312139002246E4 /* Declarations.m in Sources */,
 				085586A61B31117B002246E4 /* Start.m in Sources */,
 				085586CE1B311646002246E4 /* CustomizedCell.m in Sources */,
+				085586F01B313A1E002246E4 /* AddNew.m in Sources */,
 				085586A31B31117B002246E4 /* CM_Activity1.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,4 +10,13 @@
 
 @interface CharacterDetails : UIViewController
 
+//////Images//////////
+@property (strong, nonatomic) IBOutlet UIImageView *imgCharacter;
+
+//////Actions//////////
+- (IBAction)btnBack:(id)sender;
+
+//////Labels///////////
+@property (strong, nonatomic) IBOutlet UILabel *lblDescription;
+
 @end

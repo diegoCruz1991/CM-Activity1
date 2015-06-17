@@ -16,19 +16,169 @@
                                 <rect key="frame" x="0.0" y="60" width="320" height="508"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="hWM-pz-qZM"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="rl0-8G-l6N"/>
+                                </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Sj4-hw-60F" userLabel="btnAddNew">
+                                <rect key="frame" x="252" y="28" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.29966974572132604" green="0.76064805588181572" blue="0.91226720328282829" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="0.99033491448402888" green="0.99497494523556862" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAddNew:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eIj-mU-QQI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="tblMain" destination="GLb-CW-NK8" id="eNp-hl-9fz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="121.06666666666666" y="320.92000000000002"/>
+            <point key="canvasLocation" x="121" y="320"/>
+        </scene>
+        <!--AddNew-->
+        <scene sceneID="Dad-Tn-7of">
+            <objects>
+                <viewController storyboardIdentifier="AddNew" id="KNW-lk-Gwo" userLabel="AddNew" customClass="AddNew" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gMn-sR-7hG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Character name" minimumFontSize="17" id="G7l-Pd-q1V" userLabel="txtName">
+                                <rect key="frame" x="53" y="231" width="210" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Character age" minimumFontSize="17" id="tJz-yx-deF" userLabel="txtAge">
+                                <rect key="frame" x="53" y="269" width="210" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" indicatorStyle="black" text="Add a nice description..." id="Dye-3I-I2m" userLabel="txtViewDesc">
+                                <rect key="frame" x="53" y="312" width="210" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="psj-hT-Gmq" userLabel="btnAdd">
+                                <rect key="frame" x="115" y="454" width="90" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.44095988390690244" green="0.77449588268947522" blue="0.9072166982323232" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="0.94835368836155431" green="0.93795148089561176" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAdd:" destination="KNW-lk-Gwo" eventType="touchUpInside" id="8Fq-sU-ZAs"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default.jpg" id="xHX-vl-JgD" userLabel="imgAddImg">
+                                <rect key="frame" x="53" y="73" width="210" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8be-ES-K9p" userLabel="btnAddImg">
+                                <rect key="frame" x="119" y="117" width="78" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="60"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAddNewImg:" destination="KNW-lk-Gwo" eventType="touchUpInside" id="Two-Ob-OMX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C1l-iX-sBQ">
+                                <rect key="frame" x="10" y="28" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41570254124735373" green="0.76711084382587802" blue="0.90394176136363635" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCancel:" destination="KNW-lk-Gwo" eventType="touchUpInside" id="nIK-ZL-i8B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnAddImgProp" destination="8be-ES-K9p" id="k9g-xr-3L0"/>
+                        <outlet property="imgAddImg" destination="xHX-vl-JgD" id="agm-o4-TVt"/>
+                        <outlet property="txtAge" destination="tJz-yx-deF" id="6St-hN-UJP"/>
+                        <outlet property="txtName" destination="G7l-Pd-q1V" id="1ol-4y-pMX"/>
+                        <outlet property="txtViewDesc" destination="Dye-3I-I2m" id="Haa-WA-h6l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H2T-c0-8SG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121" y="961"/>
+        </scene>
+        <!--CharacterDetails-->
+        <scene sceneID="5Cu-MG-7Pa">
+            <objects>
+                <viewController storyboardIdentifier="CharacterDetails" id="Icj-EK-i3a" userLabel="CharacterDetails" customClass="CharacterDetails" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X1U-AG-yTR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="m0X-vw-LDt" userLabel="imgCharacter">
+                                <rect key="frame" x="60" y="70" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nY4-iA-oX6" userLabel="lblDescription">
+                                <rect key="frame" x="47" y="303" width="227" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.98710362167235022" blue="0.99181148285770493" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QXN-CV-eFJ" userLabel="btnBack">
+                                <rect key="frame" x="10" y="28" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.28323127221561439" green="0.76280340069107655" blue="0.89240056818181812" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.99107546258019441" green="1" blue="0.9502203813141914" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBack:" destination="Icj-EK-i3a" eventType="touchUpInside" id="cuK-DE-YL4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgCharacter" destination="m0X-vw-LDt" id="jh7-H5-vEY"/>
+                        <outlet property="lblDescription" destination="nY4-iA-oX6" id="9Rf-ty-JBW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ee-uk-Xgm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="498" y="320"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="default.jpg" width="1024" height="680"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <color key="tintColor" red="0.2463014967485736" green="0.29244387125321103" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
